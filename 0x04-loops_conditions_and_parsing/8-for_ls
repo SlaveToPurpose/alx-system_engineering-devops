@@ -4,6 +4,6 @@
 for file in *; do
     if [[ -f "$file" ]]; then
         display="${file#*-}"
-        echo $display
+        echo "${display}"
     fi
 done

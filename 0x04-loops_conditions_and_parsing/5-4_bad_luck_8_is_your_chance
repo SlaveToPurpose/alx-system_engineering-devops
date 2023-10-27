@@ -8,11 +8,11 @@ i=1
 
 while((i <= 10)); do
     if ((i == 4)); then
-        echo $four
+        echo "${four}"
     elif ((i == 8)); then
-        echo $eight
+        echo "${eight}"
     else
-        echo $to_print
+        echo "${to_print}"
     fi
     ((i++))
 done
