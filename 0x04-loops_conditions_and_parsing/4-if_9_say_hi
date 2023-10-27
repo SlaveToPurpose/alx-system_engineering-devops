@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+to_print="Best School"
+nine="Hi"
+i=1
+
+while((i <= 10)); do
+    if ((i != 9));then
+        echo $to_print
+    else
+        echo $nine
+    fi
+    
+    ((i++))
+done

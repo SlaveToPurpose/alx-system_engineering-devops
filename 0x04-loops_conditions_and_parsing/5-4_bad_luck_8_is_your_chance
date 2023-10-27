@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+to_print="Best School"
+four="bad luck"
+eight="good luck"
+i=1
+
+while((i <= 10)); do
+    if ((i == 4)); then
+        echo $four
+    elif ((i == 8)); then
+        echo $eight
+    else
+        echo $to_print
+    fi
+    ((i++))
+done
