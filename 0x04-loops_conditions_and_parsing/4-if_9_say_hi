@@ -5,8 +5,8 @@ to_print="Best School"
 nine="Hi"
 i=1
 
-while((i <= 10)); do
-    if ((i == 9));then
+while((${i} <= 10)); do
+    if ((${i} == 9));then
         echo "${nine}"
     else
         echo "${to_print}"
