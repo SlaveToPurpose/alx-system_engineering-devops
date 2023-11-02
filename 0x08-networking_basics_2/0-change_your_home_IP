@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# resolve local host to 127.0.0.1, resolve facebook to 8.8.8.8
+
+echo "127.0.0.2 localhost" >> /etc/hosts
+echo "8.8.8.8 facebook.com" >> /etc/hosts
