@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # display all active ipv4 ips
 
-ifconfig | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
+ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-8
+
